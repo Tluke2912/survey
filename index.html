@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Survey | The Odin Project</title>
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.dol.gov/coronavirus">U.S. Department of Labor</a>
+        </li>
+        <li>
+          <a href="https://www.dshs.texas.gov/coronavirus/"
+            >Texas Department of State Health Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html"
+            >CDC
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section id="title">
+      <h1>coronavirus survey</h1>
+      <p id="description">
+        This is a simple and quick survey to help us determine the impact of
+        COVID on our local communities. <br />
+        We appreciate your assistance in gathering this crucial information.
+      </p>
+    </section>
+  </header>
+  <body>
+    <div class="content-divider"></div>
+    <div class="img-container">
+      <div class="survey-container">
+        <form id="survey-form">
+          <section id="contact-section">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-input"
+              placeholder="Enter your name"
+              required
+            />
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-input"
+              placeholder="Enter your email"
+              required
+            />
+            <label for="number" id="number-label">Phone number</label>
+            <input
+              type="number"
+              id="number"
+              class="form-input"
+              placeholder="Enter your contact number"
+              required
+            />
+          </section>
+        <!-- employment -->
+          <section id="employment-section">
+            <p for="employment-status"
+              >Employment status (as of March 15th, 2020)
+            </p>
+            
+            <select name="employment-dropdown" id="dropdown">
+              <option disabled selected value>Emplyoment status</option>
+              <option value="full-time">Full time</option>
+              <option value="part-time">Part time</option>
+              <option value="full-time">Unemployed</option>
+            </select>
+            <p for="employment-status"
+              >Employment status (as of May 30th, 2020)</p
+            >
+            <select name="employment-dropdown" id="dropdown">
+              <option disabled selected value>Emplyoment status</option>
+              <option value="full-time">Full time</option>
+              <option value="part-time">Part time</option>
+              <option value="full-time">Unemployed</option>
+            </select>
+          </section>
+          <!-- goverment -->
+          <section id="goverment-section"></section>
+            <p> 
+            What is your satisifcation with the goverment's response?
+            </p>
+          
+            <label class="radio-label">
+              <input
+                name="goverment-response"
+                value="very-satisfied"
+                type="radio"
+                class="input-radio"
+              />Very satisfied
+            </label>
+            <label class="radio-label">
+              <input
+                name="goverment-response"
+                value="satisfied"
+                type="radio"
+                class="input-radio"
+              />Satisfied
+            </label>
+            <label class="radio-label">
+              <input
+                name="goverment-response"
+                value="not-satisfied"
+                type="radio"
+                class="input-radio"
+              />Not satisfied
+            </label>
+            <label class="radio-label">
+              <input
+                name="goverment-response"
+                value="very-satisfied"
+                type="radio"
+                class="input-radio"
+              />Very unsatisfied
+            </label>
+          </section>
+          <!-- eco -->
+          <section class="eco-status">
+              <p>
+                  What impact, if any, has COVID had on you?
+              </p>
+              <label for="ecocheckbox" class="eco-label">
+                  <input type="checkbox" 
+                  class="eco-checkbox" 
+                  name="ecostatus" 
+                  value="none">None
+              </label>
+              <label for="eco-checkbox" class="eco-label">
+                  <input type="checkbox" 
+                  class="eco-checkbox"
+                  name="ecostatus"
+                  value="jobloss">Loss of job
+              </label>
+              <label for="eco-checkbox" class="eco-label">
+                  <input type="checkbox"
+                  class="eco-checkbox" 
+                  name="ecostatus" 
+                  value="furlough">Furlough
+              </label>
+              <label for="eco-checkbox" class="eco-label">
+                  <input type="checkbox" class="eco-checkbox" name="ecostatus" value="severe">Reduction in income
+              </label>
+              <label for="eco-checkbox" class="eco-label">
+                  <input type="checkbox" class="eco-checkbox" name="ecostatus" value="WFH">Shift to WFH
+              </label>
+          </section>
+          <section class="comments">
+              <p>Additional comments?</p>
+              <textarea placeholder="Please enter your comments here" 
+              rows="8" cols="55">
+              </textarea>
+          </section>
+          
+        <div class="btn">
+          <a href="#" id="submit">Submit</a>
+        </div>
+        </form>
+</div>
+</div>
+  </body>
+</html>
